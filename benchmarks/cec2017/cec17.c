@@ -10,7 +10,7 @@
 // #include <WINDOWS.H>
 #include "stdio.h"
 #include "math.h"
-#include "malloc.h"
+//#include "malloc.h"
 #include "unistd.h"
 
 #include "cec17.h"
