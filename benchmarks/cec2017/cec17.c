@@ -10,7 +10,7 @@
 // #include <WINDOWS.H>
 #include "stdio.h"
 #include "math.h"
-//#include "malloc.h"
+#include "malloc.h"
 #include "unistd.h"
 
 #include "cec17.h"
@@ -85,8 +85,6 @@ void eval(double *x, int nx, int mx, double *f, int func_num)
 		fpt = fopen(FileName,"r");
 		if (fpt==NULL)
 		{
-            printf("\n");
-            printf(FileName);
 		    printf("\n Error: Cannot open input file for reading \n");
 		}
 		if (func_num<20)
@@ -117,8 +115,6 @@ void eval(double *x, int nx, int mx, double *f, int func_num)
 		fpt = fopen(FileName,"r");
 		if (fpt==NULL)
 		{
-            printf("\n");
-            printf(FileName);
 			printf("\n Error: Cannot open input file for reading \n");
 		}
 
@@ -163,8 +159,6 @@ void eval(double *x, int nx, int mx, double *f, int func_num)
 			fpt = fopen(FileName,"r");
 			if (fpt==NULL)
 			{
-                printf("\n");
-                printf(FileName);
 				printf("\n Error: Cannot open input file for reading \n");
 			}
 			SS=(int *)malloc(nx*sizeof(int));
@@ -191,8 +185,6 @@ void eval(double *x, int nx, int mx, double *f, int func_num)
   Here x is a D*pop_size matrix.
 */
 			{
-                printf("\n");
-                printf(FileName);
 				printf("\n Error: Cannot open input file for reading \n");
 			}
 			SS=(int *)malloc(nx*cf_num*sizeof(int));

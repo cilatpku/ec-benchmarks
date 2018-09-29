@@ -9,10 +9,10 @@ setup(name='benchmarks',
       license='Apache 2.0',
       packages=['benchmarks'],
       ext_modules = [Extension('_cec13',
-        sources=['benchmarks/cec2013/cec13_wrap.c', 'benchmarks/cec2013/cec13.c'],
+        sources=['benchmarks/cec2013/cec13.i', 'benchmarks/cec2013/cec13.c'],
         swig_opts=['-modern', '-I../include']),
                      Extension('_cec17',
-        sources=['benchmarks/cec2017/cec17_wrap.c', 'benchmarks/cec2017/cec17.c'],
+        sources=['benchmarks/cec2017/cec17.i', 'benchmarks/cec2017/cec17.c'],
         swig_opts=['-modern', '-I../include'])],
 )
 

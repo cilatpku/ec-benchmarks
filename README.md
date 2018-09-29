@@ -29,3 +29,10 @@ python3 setup.py install
 ```
 
 If you do not have the super authority, run 'python3 setup.py install --user' instead.
+The installation requires SWIG, which can be obtained via
+```
+MACOS:
+	brew install swig
+UBUNTU:
+	apt-get install swig
+```
